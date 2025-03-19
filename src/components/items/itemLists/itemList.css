@@ -1,47 +1,100 @@
-/* ItemList Component Styling - Enhanced Version */
-.productos-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 3rem 1rem;
-    background-color: #f9f9f9;
-}
+ .productos-container {
+    max-width: 1280px;
+    margin: 2rem auto 4rem;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: var(--rounded-lg);
+  }
   
-h2.productos-title {
-    font-size: 2.5rem;
+  h2.productos-title {
+    font-size: 2.25rem;
+    font-weight: 800;
     text-align: center;
-    margin-bottom: 2.5rem;
-    color: #333;
+    margin-bottom: 3rem;
+    color: var(--text-dark);
     position: relative;
-    font-weight: 700;
-    letter-spacing: 1px;
-}
+    letter-spacing: 0.025em;
+  }
   
-h2.productos-title::before {
+  h2.productos-title::after {
     content: "";
     position: absolute;
-    width: 60px;
-    height: 4px;
-    background-color: #0066cc;
-    bottom: -10px;
+    bottom: -0.75rem;
     left: 50%;
     transform: translateX(-50%);
-}
+    width: 5rem;
+    height: 0.25rem;
+    background: linear-gradient(90deg, var(--primary-color), var(--secondary-color));
+    border-radius: var(--rounded-full);
+  }
   
-h2.productos-title::after {
-    content: "";
-    position: absolute;
-    width: 30px;
-    height: 4px;
-    background-color: #ff6b6b;
-    bottom: -20px;
-    left: 50%;
-    transform: translateX(-50%);
-}
-  
-.productos {
+  .productos {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2.5rem;
-    margin-top: 3rem;
-}
+    gap: 2rem;
+    margin-top: 1.5rem;
+  }
   
+  /* Loading product placeholder styles */
+  .loading-product {
+    animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  .loading-product .image-container {
+    background-color: #e5e7eb;
+    border-radius: var(--rounded-md) var(--rounded-md) 0 0;
+  }
+  
+  .loading-product .producto-info {
+    background-color: #e5e7eb;
+    border-radius: 0 0 var(--rounded-md) var(--rounded-md);
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 1024px) {
+    .productos {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    h2.productos-title {
+      font-size: 1.875rem;
+    }
+    
+    .productos-container {
+      padding: 1.25rem;
+      margin: 1.5rem auto 3rem;
+    }
+  }
+  
+  @media (max-width: 640px) {
+    .productos {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 1.25rem;
+    }
+    
+    h2.productos-title {
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .productos {
+      grid-template-columns: 1fr;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }

@@ -1,6 +1,9 @@
 import React from 'react'
 import './Item.css'
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStar, faStarHalfAlt } from '@fortawesome/free-solid-svg-icons';
+import { faStar as faStarEmpty } from '@fortawesome/free-regular-svg-icons';
 
 const Item = ({producto}) => {
 
@@ -10,6 +13,31 @@ const Item = ({producto}) => {
   
   // Determine if product should be marked as new (example logic)
   const isNew = producto.id % 5 === 0;
+
+  // Function to render stars based on rating
+const renderStars = (rating) => {
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 >= 0.5;
+    
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(<FontAwesomeIcon key={`star-${i}`} icon={faStar} />);
+    }
+    
+    // Add half star if needed
+    if (hasHalfStar) {
+      stars.push(<FontAwesomeIcon key="half-star" icon={faStarHalfAlt} />);
+    }
+    
+    // Add empty stars to make 5 total
+    const emptyStars = 5 - fullStars - (hasHalfStar ? 1 : 0);
+    for (let i = 0; i < emptyStars; i++) {
+      stars.push(<FontAwesomeIcon key={`empty-${i}`} icon={faStarEmpty} />);
+    }
+    
+    return stars;
+  };
 
   return (
     <div className={`producto ${isNew ? 'new-product' : ''}`}>
@@ -23,12 +51,7 @@ const Item = ({producto}) => {
             <h4>{producto.name}</h4>
             
             <div className="rating">
-                {/* Star icons - */}
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className="fas fa-star"></i>
-                <i className={`fas fa-star${parseFloat(rating) % 1 >= 0.5 ? '' : '-half-alt'}`}></i>
+                {renderStars(parseFloat(rating))}
                 <span>{rating}</span>
                 <span className="rating-count">({ratingCount})</span>
             </div>

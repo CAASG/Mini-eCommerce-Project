@@ -1,12 +1,69 @@
-# React + Vite
+# TechVault - eCommerce Project
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is an eCommerce platform built with React and Vite, featuring a modern UI for browsing and purchasing electronics products.
 
-Currently, two official plugins are available:
+## Features
+
+- Product browsing by category (Electronics, Audio, Accessories)
+- Product detail views with descriptions and specifications
+- Shopping cart functionality (add, remove, adjust quantities)
+- Responsive design for mobile and desktop
+- Firebase integration for product data
+- Contact form with validation
+
+## Technologies Used
+
+- React 18
+- Vite
+- React Router for navigation
+- Firebase Firestore for database
+- React Hook Form for form handling
+- Context API for state management
+- Font Awesome for icons
+
+## Setup and Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/your-username/techvault.git
+
+# Navigate to project directory
+cd techvault
+
+# Install dependencies
+npm install
+
+# Start development server
+npm run dev
+```
+
+The application will be available at `http://localhost:5173`
+
+## Deployment
+
+This project is deployed using Netlify. The live demo can be accessed at [your-site-url.netlify.app](https://your-site-url.netlify.app)
+
+## Expanding the Project
+
+Potential enhancements for this project:
+
+- User authentication system
+- Order processing and payment integration
+- Product reviews and ratings
+- Admin dashboard for product management
+- Wishlist functionality
+
+## Vite Configuration
+
+This project uses Vite for fast development and optimized builds. The following plugins are used:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
+## Learn More
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To learn more about the technologies used in this project:
+
+- [React Documentation](https://reactjs.org/)
+- [Vite Documentation](https://vitejs.dev/)
+- [Firebase Documentation](https://firebase.google.com/docs)
+- [React Router Documentation](https://reactrouter.com/)

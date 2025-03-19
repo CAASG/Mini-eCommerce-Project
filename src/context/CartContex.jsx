@@ -37,6 +37,10 @@ export const CartProvider = ({children}) => {
     setCart([]);
   }
 
+  const removeItem = (itemId) => {
+    setCart(cart.filter((prod) => prod.id !== itemId));
+};
+
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(cart))
   }, [cart])
@@ -48,7 +52,8 @@ export const CartProvider = ({children}) => {
         addToCart, 
         amoutOnCart, 
         totalPrice, 
-        clearCart
+        clearCart,
+        removeItem
         } }>
         {children}
     </CartContext.Provider>

@@ -11,6 +11,12 @@ const uploadData = async () => {
   for (const item of data) {
     const { id, ...productoSinId } = item; // Eliminar el campo "id"
 
+    // Mantener la categoría y guardarla en minúsculas
+    const productoConCategoria = {
+      ...productoSinId,
+      category: item.category.toLowerCase(), // Se asegura de que category esté presente y en minúsculas
+    };
+
     try {
       await addDoc(productosRef, productoSinId);
       console.log(`✅ Producto "${productoSinId.name}" agregado.`);
