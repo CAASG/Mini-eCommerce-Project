@@ -41,7 +41,7 @@ The application will be available at `http://localhost:5173`
 
 ## Deployment
 
-This project is deployed using Netlify. The live demo can be accessed at [your-site-url.netlify.app](https://your-site-url.netlify.app)
+This project is deployed using Netlify. The live demo can be accessed at [techvault-ecommerce.netlify.app](https://techvault-ecommerce.netlify.app)
 
 ## Expanding the Project
 
