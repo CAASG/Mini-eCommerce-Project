@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { collection, getDocs, query, where, limit } from 'firebase/firestore';
 import { db } from '../../firebase/config';
 import ItemList from '../items/itemLists/ItemList';
-import './Home.css';
+import './home.css';
 
 const Home = () => {
   const [featuredProducts, setFeaturedProducts] = useState([]);

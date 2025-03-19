@@ -1,6 +1,6 @@
 import React from 'react'
 import Item from '../Item'
-import './ItemList.css'
+import './itemList.css'
 import { toCapital } from '../../../helpers/toCapital'
 
 const ItemList = ( {productos, title, loading} ) => {

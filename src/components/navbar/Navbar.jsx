@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import "./Navbar.css"
+import "./navbar.css"
 import { Link, useLocation } from 'react-router-dom';
 import CartWidget from '../cart/CartWidget';
 import logo from '/logo.svg'
