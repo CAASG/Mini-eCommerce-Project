@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop ASUS VivoBook",
+    "category": "Electronics",
+    "price": 799.99,
+    "stock": 15,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Laptop",
+    "description": "Powerful laptop with AMD Ryzen 5 and 16GB RAM."
+  },
+  {
+    "id": 2,
+    "name": "Wireless Headphones Sony",
+    "category": "Audio",
+    "price": 199.99,
+    "stock": 30,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Headphones",
+    "description": "Noise-canceling Bluetooth headphones with 30 hours battery life."
+  },
+  {
+    "id": 3,
+    "name": "Gaming Mouse Logitech G502",
+    "category": "Accessories",
+    "price": 49.99,
+    "stock": 50,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Mouse",
+    "description": "Ergonomic gaming mouse with customizable buttons and RGB lighting."
+  },
+  {
+    "id": 4,
+    "name": "Mechanical Keyboard Corsair K95",
+    "category": "Accessories",
+    "price": 129.99,
+    "stock": 20,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Keyboard",
+    "description": "RGB mechanical keyboard with Cherry MX switches."
+  },
+  {
+    "id": 5,
+    "name": "Smartphone Samsung Galaxy S23",
+    "category": "Electronics",
+    "price": 999.99,
+    "stock": 10,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Smartphone",
+    "description": "Flagship smartphone with Snapdragon 8 Gen 2 processor and 120Hz display."
+  },
+  {
+    "id": 6,
+    "name": "Smart TV LG OLED55",
+    "category": "Electronics",
+    "price": 1199.99,
+    "stock": 8,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=TV",
+    "description": "55-inch OLED Smart TV with 4K resolution and AI ThinQ."
+  },
+  {
+    "id": 7,
+    "name": "Bluetooth Speaker JBL Flip 5",
+    "category": "Audio",
+    "price": 89.99,
+    "stock": 40,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Speaker",
+    "description": "Portable Bluetooth speaker with waterproof design."
+  },
+  {
+    "id": 8,
+    "name": "External SSD Samsung T7",
+    "category": "Accessories",
+    "price": 129.99,
+    "stock": 25,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=SSD",
+    "description": "1TB external SSD with USB 3.2 and high-speed data transfer."
+  },
+  {
+    "id": 9,
+    "name": "Gaming Headset Razer Kraken",
+    "category": "Audio",
+    "price": 79.99,
+    "stock": 35,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Headset",
+    "description": "Comfortable gaming headset with 7.1 surround sound."
+  },
+  {
+    "id": 10,
+    "name": "Wireless Charger Anker PowerWave",
+    "category": "Accessories",
+    "price": 29.99,
+    "stock": 60,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Charger",
+    "description": "Fast wireless charger compatible with most smartphones."
+  },
+  {
+    "id": 11,
+    "name": "Monitor Dell 27-inch",
+    "category": "Electronics",
+    "price": 349.99,
+    "stock": 12,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Monitor",
+    "description": "27-inch Full HD monitor with 75Hz refresh rate."
+  },
+  {
+    "id": 12,
+    "name": "Smartwatch Apple Watch Series 8",
+    "category": "Electronics",
+    "price": 429.99,
+    "stock": 18,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Smartwatch",
+    "description": "Advanced health and fitness tracking smartwatch."
+  },
+  {
+    "id": 13,
+    "name": "Soundbar Bose 700",
+    "category": "Audio",
+    "price": 799.99,
+    "stock": 5,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Soundbar",
+    "description": "Premium soundbar with deep bass and Alexa built-in."
+  },
+  {
+    "id": 14,
+    "name": "Gaming Chair DXRacer",
+    "category": "Accessories",
+    "price": 289.99,
+    "stock": 10,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Chair",
+    "description": "Ergonomic gaming chair with adjustable armrests."
+  },
+  {
+    "id": 15,
+    "name": "USB Hub Anker 10-in-1",
+    "category": "Accessories",
+    "price": 59.99,
+    "stock": 45,
+    "image": "https://placehold.co/150x150/FF5733/FFFFFF?text=Hub",
+    "description": "USB-C hub with 10 ports including HDMI and Ethernet."
+  }
+]

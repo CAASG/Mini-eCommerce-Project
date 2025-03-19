@@ -1,0 +1,253 @@
+/* Item Component Styling */
+.producto {
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+}
+  
+.producto:hover {
+    transform: translateY(-12px) scale(1.03);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+  
+.producto .image-container {
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+}
+  
+.producto img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.8s ease;
+}
+  
+.producto:hover img {
+    transform: scale(1.1);
+}
+  
+.producto .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.4) 100%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+  
+.producto:hover .overlay {
+    opacity: 1;
+}
+  
+.badge-container {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+}
+  
+.producto-info {
+    padding: 1.8rem;
+    position: relative;
+}
+  
+.category-badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    background: linear-gradient(135deg, #0066cc, #5e9eff);
+    color: white;
+    border-radius: 25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    box-shadow: 0 4px 10px rgba(0, 102, 204, 0.3);
+}
+  
+.producto h4 {
+    margin: 0.8rem 0;
+    font-size: 1.3rem;
+    color: #333;
+    font-weight: 600;
+}
+  
+.price-container {
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+}
+  
+.price {
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #111;
+    position: relative;
+}
+  
+.price::before {
+    content: "$";
+    font-size: 0.9rem;
+    position: relative;
+    top: -5px;
+    left: -2px;
+    color: #666;
+}
+  
+.rating {
+    display: flex;
+    align-items: center;
+    margin: 0.5rem 0;
+    color: #ffa41b;
+}
+  
+.rating i {
+    margin-right: 2px;
+}
+  
+.rating-count {
+    color: #777;
+    font-size: 0.8rem;
+    margin-left: 5px;
+}
+  
+.ver-mas {
+    display: inline-block;
+    padding: 0.8rem 1.8rem;
+    background: linear-gradient(135deg, #0066cc, #5e9eff);
+    color: white;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+  
+.ver-mas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #004d99, #0066cc);
+    transition: width 0.3s ease;
+    z-index: -1;
+}
+  
+.ver-mas:hover::before {
+    width: 100%;
+}
+  
+.ver-mas:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 102, 204, 0.4);
+}
+  
+.quick-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+  
+.action-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f4f9;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+  
+.action-btn:hover {
+    background-color: #0066cc;
+    color: white;
+    transform: translateY(-3px);
+}
+  
+.action-btn i {
+    font-size: 16px;
+}
+  
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .productos {
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+}
+  
+@media (max-width: 768px) {
+    .productos {
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+      gap: 1.5rem;
+}
+    
+.producto-info {
+      padding: 1.2rem;
+}
+    
+h2.productos-title {
+      font-size: 2rem;
+    }
+}
+  
+@media (max-width: 480px) {
+    .productos {
+      grid-template-columns: 1fr;
+      max-width: 320px;
+      margin: 0 auto;
+}
+    
+h2.productos-title {
+      font-size: 1.8rem;
+    }
+}
+  
+/* Animation for new products */
+.new-product {
+    position: relative;
+    overflow: hidden;
+}
+  
+.new-product::after {
+    content: "NEW";
+    position: absolute;
+    top: 15px;
+    right: -35px;
+    background-color: #ff6b6b;
+    color: white;
+    padding: 5px 40px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    transform: rotate(45deg);
+    box-shadow: 0 3px 10px rgba(255, 107, 107, 0.4);
+}
+  
+/* Loading animation */
+@keyframes shimmer {
+    0% {
+      background-position: -468px 0;
+    }
+    100% {
+      background-position: 468px 0;
+    }
+}
+  
+.loading-product {
+    background: #f6f7f8;
+    background: linear-gradient(to right, #f6f7f8 8%, #edeef1 18%, #f6f7f8 33%);
+    background-size: 800px 104px;
+    position: relative;
+    animation: shimmer 1.5s infinite linear;
+}
